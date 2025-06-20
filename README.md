@@ -1,4 +1,4 @@
-# MatrimonialApp
+# Matrimony App - Android Clean Architecture
 
 A modern Android matrimony app built with Clean Architecture, Room Database, Dagger Hilt, and Retrofit. The app follows best practices for separation of concerns, dependency injection, and data management.
 
