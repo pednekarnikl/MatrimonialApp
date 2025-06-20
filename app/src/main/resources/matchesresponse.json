@@ -1,0 +1,570 @@
+{
+  "results": [
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "Emil",
+        "last": "Moilanen"
+      },
+      "location": {
+        "street": {
+          "number": 5278,
+          "name": "Siilitie"
+        },
+        "city": "Isokyrö",
+        "state": "Pirkanmaa",
+        "country": "Finland",
+        "postcode": 21501,
+        "coordinates": {
+          "latitude": "-22.3930",
+          "longitude": "-167.0527"
+        },
+        "timezone": {
+          "offset": "+5:45",
+          "description": "Kathmandu"
+        }
+      },
+      "email": "emil.moilanen@example.com",
+      "login": {
+        "uuid": "49c8c282-7eec-4d2c-8e89-6c3774c97ff5",
+        "username": "orangelion479",
+        "password": "teacher",
+        "salt": "E66WZlXs",
+        "md5": "af1661ccfd55e57ab8c3b880d425a1bc",
+        "sha1": "12261e695b9d804ce1cb6224158946315fbc4d91",
+        "sha256": "7c09ca17bb11bbff7ea5fb1ac6961d6eadafdb803d909bb8a3ce314bd50b25a3"
+      },
+      "dob": {
+        "date": "1989-01-22T11:53:17.229Z",
+        "age": 36
+      },
+      "registered": {
+        "date": "2006-05-07T23:46:18.836Z",
+        "age": 19
+      },
+      "phone": "05-275-499",
+      "cell": "043-732-83-96",
+      "id": {
+        "name": "HETU",
+        "value": "NaNNA301undefined"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/47.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/47.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/47.jpg"
+      },
+      "nat": "FI"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Mrs",
+        "first": "Julie",
+        "last": "Grant"
+      },
+      "location": {
+        "street": {
+          "number": 1127,
+          "name": "James St"
+        },
+        "city": "Los Angeles",
+        "state": "Texas",
+        "country": "United States",
+        "postcode": 48848,
+        "coordinates": {
+          "latitude": "49.2919",
+          "longitude": "-65.5471"
+        },
+        "timezone": {
+          "offset": "-3:30",
+          "description": "Newfoundland"
+        }
+      },
+      "email": "julie.grant@example.com",
+      "login": {
+        "uuid": "3d4fa412-f975-4a41-a8d6-c6487bd816d0",
+        "username": "greenswan122",
+        "password": "anna",
+        "salt": "VxrHBT2F",
+        "md5": "ce508318dd23894757efe3b3eeff289a",
+        "sha1": "401395853e192f41fab62f3fa5074fa2196d39f6",
+        "sha256": "2dbd93c52a35035addeee9b3ac7bfe10a5e548769e01429e89d270ed309cc182"
+      },
+      "dob": {
+        "date": "1949-02-02T21:53:20.827Z",
+        "age": 76
+      },
+      "registered": {
+        "date": "2019-04-16T19:33:20.772Z",
+        "age": 6
+      },
+      "phone": "(730) 673-2660",
+      "cell": "(957) 491-9646",
+      "id": {
+        "name": "SSN",
+        "value": "003-50-3843"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/73.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/73.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/73.jpg"
+      },
+      "nat": "US"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "Armando",
+        "last": "Peixoto"
+      },
+      "location": {
+        "street": {
+          "number": 2108,
+          "name": "Rua São José "
+        },
+        "city": "Várzea Grande",
+        "state": "Distrito Federal",
+        "country": "Brazil",
+        "postcode": 44513,
+        "coordinates": {
+          "latitude": "-75.9147",
+          "longitude": "124.6415"
+        },
+        "timezone": {
+          "offset": "-8:00",
+          "description": "Pacific Time (US & Canada)"
+        }
+      },
+      "email": "armando.peixoto@example.com",
+      "login": {
+        "uuid": "cb509b53-aa1f-49b5-b2f9-7a006805d641",
+        "username": "whitepanda441",
+        "password": "shamus",
+        "salt": "QZMCqMdA",
+        "md5": "5fb2978d43a0678106baf5857c0e26db",
+        "sha1": "e8ab92dca9f699c8de6ca2fa47d7678f60e894fc",
+        "sha256": "7343716f2a351118abb15010f0e9e4838f28cb1d95d772528229cbf1484512f6"
+      },
+      "dob": {
+        "date": "1973-04-07T13:51:48.841Z",
+        "age": 52
+      },
+      "registered": {
+        "date": "2009-02-02T14:03:19.005Z",
+        "age": 16
+      },
+      "phone": "(79) 1827-9481",
+      "cell": "(61) 4716-6137",
+      "id": {
+        "name": "CPF",
+        "value": "034.195.756-09"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/51.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/51.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/51.jpg"
+      },
+      "nat": "BR"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Mestan",
+        "last": "Kocabıyık"
+      },
+      "location": {
+        "street": {
+          "number": 6612,
+          "name": "Vatan Cd"
+        },
+        "city": "Hatay",
+        "state": "Kırşehir",
+        "country": "Turkey",
+        "postcode": 84852,
+        "coordinates": {
+          "latitude": "-49.8439",
+          "longitude": "-130.9954"
+        },
+        "timezone": {
+          "offset": "+9:30",
+          "description": "Adelaide, Darwin"
+        }
+      },
+      "email": "mestan.kocabiyik@example.com",
+      "login": {
+        "uuid": "b23cf46a-d974-4a16-8eb6-858bf2c4bf6c",
+        "username": "heavybutterfly890",
+        "password": "hockey1",
+        "salt": "IPjolgNk",
+        "md5": "75ab646c39897f644afca4491d781b8e",
+        "sha1": "3a0b2e68bfe2f9ba23e98334361e6a2dbad10389",
+        "sha256": "b522db6e59bfcac0d3d32f1aded77a8a86c46a8992926cb47b8f2debf14fcdc1"
+      },
+      "dob": {
+        "date": "1980-08-24T08:46:35.643Z",
+        "age": 44
+      },
+      "registered": {
+        "date": "2017-07-06T10:36:52.226Z",
+        "age": 7
+      },
+      "phone": "(768)-487-2247",
+      "cell": "(560)-737-2350",
+      "id": {
+        "name": "",
+        "value": null
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/87.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/87.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/87.jpg"
+      },
+      "nat": "TR"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "Fernando",
+        "last": "Carpenter"
+      },
+      "location": {
+        "street": {
+          "number": 833,
+          "name": "York Road"
+        },
+        "city": "Galway",
+        "state": "Cork",
+        "country": "Ireland",
+        "postcode": 63236,
+        "coordinates": {
+          "latitude": "-61.9120",
+          "longitude": "49.5541"
+        },
+        "timezone": {
+          "offset": "-10:00",
+          "description": "Hawaii"
+        }
+      },
+      "email": "fernando.carpenter@example.com",
+      "login": {
+        "uuid": "26b2bb15-c046-42f9-89a0-eef984eaf67d",
+        "username": "purplezebra624",
+        "password": "pppppp",
+        "salt": "sqhoeNRw",
+        "md5": "afcbef0adcf8269d46077985f4cd6304",
+        "sha1": "c7b94af0d69a2943f864dd054346f1e9f8fae3fc",
+        "sha256": "f24b2c0ec116095a2de4b5bdcc41ab12b6a1e3864b4b8211f1a3f7edccf3b4ca"
+      },
+      "dob": {
+        "date": "1945-10-14T20:55:17.850Z",
+        "age": 79
+      },
+      "registered": {
+        "date": "2013-01-10T03:14:54.590Z",
+        "age": 12
+      },
+      "phone": "051-631-3834",
+      "cell": "081-020-4529",
+      "id": {
+        "name": "PPS",
+        "value": "6716425T"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/4.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/4.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/4.jpg"
+      },
+      "nat": "IE"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "Aventino",
+        "last": "Santos"
+      },
+      "location": {
+        "street": {
+          "number": 2286,
+          "name": "Rua São Jorge "
+        },
+        "city": "Linhares",
+        "state": "Bahia",
+        "country": "Brazil",
+        "postcode": 40070,
+        "coordinates": {
+          "latitude": "10.0542",
+          "longitude": "60.3137"
+        },
+        "timezone": {
+          "offset": "-10:00",
+          "description": "Hawaii"
+        }
+      },
+      "email": "aventino.santos@example.com",
+      "login": {
+        "uuid": "2331a277-1eac-4eca-97eb-436c9a0c5b45",
+        "username": "redswan274",
+        "password": "acura",
+        "salt": "u5pGrUGa",
+        "md5": "656e1c73f3193ca8df13084ecf2c3c30",
+        "sha1": "65233c9c933b222444093eaf3e10f933bfc2183f",
+        "sha256": "ded03d3f0e5d4c513177d9bf164459e22fa1d036602148a05c3b3b00ae2ef5d2"
+      },
+      "dob": {
+        "date": "1981-02-18T00:31:04.320Z",
+        "age": 44
+      },
+      "registered": {
+        "date": "2009-07-17T18:37:43.388Z",
+        "age": 15
+      },
+      "phone": "(95) 1734-6100",
+      "cell": "(33) 6007-5718",
+      "id": {
+        "name": "CPF",
+        "value": "282.485.197-77"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/85.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/85.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/85.jpg"
+      },
+      "nat": "BR"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "Wendolin",
+        "last": "Salgado"
+      },
+      "location": {
+        "street": {
+          "number": 7703,
+          "name": "Calle Tlaxcala"
+        },
+        "city": "Lerma",
+        "state": "Baja California Sur",
+        "country": "Mexico",
+        "postcode": 64989,
+        "coordinates": {
+          "latitude": "13.2119",
+          "longitude": "-153.2593"
+        },
+        "timezone": {
+          "offset": "-7:00",
+          "description": "Mountain Time (US & Canada)"
+        }
+      },
+      "email": "wendolin.salgado@example.com",
+      "login": {
+        "uuid": "725211f6-1944-4231-ab5b-af9080ba526e",
+        "username": "organicelephant678",
+        "password": "chai",
+        "salt": "3ll6DiLk",
+        "md5": "175ada9468cbbc33c13b6128bc44019f",
+        "sha1": "aad633b3ef0c7fe584120605a09df9e2108b7cc4",
+        "sha256": "576224726f8b3d8435b9fc7760760892a783a785ee20f9f86fe11b3d32749827"
+      },
+      "dob": {
+        "date": "1949-08-16T06:39:31.806Z",
+        "age": 75
+      },
+      "registered": {
+        "date": "2002-11-02T23:48:17.470Z",
+        "age": 22
+      },
+      "phone": "(682) 590 8785",
+      "cell": "(667) 809 2959",
+      "id": {
+        "name": "NSS",
+        "value": "11 74 99 3495 8"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/67.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/67.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/67.jpg"
+      },
+      "nat": "MX"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "Miguel",
+        "last": "Cabrera"
+      },
+      "location": {
+        "street": {
+          "number": 7915,
+          "name": "Calle de Alberto Aguilera"
+        },
+        "city": "Córdoba",
+        "state": "Castilla la Mancha",
+        "country": "Spain",
+        "postcode": 80215,
+        "coordinates": {
+          "latitude": "-21.2576",
+          "longitude": "-4.4221"
+        },
+        "timezone": {
+          "offset": "-10:00",
+          "description": "Hawaii"
+        }
+      },
+      "email": "miguel.cabrera@example.com",
+      "login": {
+        "uuid": "131783fa-c2b7-4381-92e1-3b7255e384c8",
+        "username": "greensnake738",
+        "password": "passpass",
+        "salt": "jzYvnFxc",
+        "md5": "dc43500225c18b5c1ddf787819e06c0b",
+        "sha1": "111f1e1ed705da92d3a8fa30327ab515a102266d",
+        "sha256": "a04d5bb5938ce6e117ffa6463a169983280e3cb24ea9db66221155f59380e227"
+      },
+      "dob": {
+        "date": "1984-09-21T03:48:47.381Z",
+        "age": 40
+      },
+      "registered": {
+        "date": "2007-12-26T23:44:17.157Z",
+        "age": 17
+      },
+      "phone": "984-044-842",
+      "cell": "632-659-259",
+      "id": {
+        "name": "DNI",
+        "value": "32782471-S"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/5.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/5.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/5.jpg"
+      },
+      "nat": "ES"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "Dragan",
+        "last": "Davidyak"
+      },
+      "location": {
+        "street": {
+          "number": 587,
+          "name": "Selekcioneriv"
+        },
+        "city": "Gnivan",
+        "state": "Kirovogradska",
+        "country": "Ukraine",
+        "postcode": 12216,
+        "coordinates": {
+          "latitude": "-87.7691",
+          "longitude": "-155.0899"
+        },
+        "timezone": {
+          "offset": "+4:00",
+          "description": "Abu Dhabi, Muscat, Baku, Tbilisi"
+        }
+      },
+      "email": "dragan.davidyak@example.com",
+      "login": {
+        "uuid": "ad3a5df8-2b56-4a20-864a-11b9c2e4e47d",
+        "username": "brownwolf675",
+        "password": "mantle",
+        "salt": "GFVcxlrW",
+        "md5": "c427a3e713d2d95fbce928f64b946002",
+        "sha1": "01b18a9b5cbd307a6b5091d1463756eec8811902",
+        "sha256": "c59217c1324f74a60a8051a0fedb962c7cb13d13310da9e6d6b3fdd69a66d693"
+      },
+      "dob": {
+        "date": "1989-05-08T00:37:40.676Z",
+        "age": 36
+      },
+      "registered": {
+        "date": "2003-07-20T22:42:56.504Z",
+        "age": 21
+      },
+      "phone": "(068) F65-5632",
+      "cell": "(067) C44-6480",
+      "id": {
+        "name": "",
+        "value": null
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/40.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/40.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/40.jpg"
+      },
+      "nat": "UA"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "Benjamin",
+        "last": "Laurent"
+      },
+      "location": {
+        "street": {
+          "number": 5721,
+          "name": "Rue Dubois"
+        },
+        "city": "Perpignan",
+        "state": "Isère",
+        "country": "France",
+        "postcode": 33708,
+        "coordinates": {
+          "latitude": "15.2453",
+          "longitude": "-135.8048"
+        },
+        "timezone": {
+          "offset": "-8:00",
+          "description": "Pacific Time (US & Canada)"
+        }
+      },
+      "email": "benjamin.laurent@example.com",
+      "login": {
+        "uuid": "fccba7fd-3c37-419d-a2e7-292394a10ad4",
+        "username": "sadswan893",
+        "password": "lithium",
+        "salt": "8PLlTfed",
+        "md5": "b04604435fe2a535e9a8dd8a7ef5f2df",
+        "sha1": "e79d2be08e6b7f310a3bf14f09fe05cdae5d9e38",
+        "sha256": "616e324bf86aefa82b4451936759ee653de1a73c4f15e473e91935a5de175fe9"
+      },
+      "dob": {
+        "date": "1954-10-31T17:38:11.037Z",
+        "age": 70
+      },
+      "registered": {
+        "date": "2021-12-20T01:15:54.704Z",
+        "age": 3
+      },
+      "phone": "03-23-13-65-14",
+      "cell": "06-51-09-18-62",
+      "id": {
+        "name": "INSEE",
+        "value": "1540924721603 78"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/83.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/83.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/83.jpg"
+      },
+      "nat": "FR"
+    }
+  ],
+  "info": {
+    "seed": "1a3001f3beb61d8c",
+    "results": 10,
+    "page": 1,
+    "version": "1.4"
+  }
+}

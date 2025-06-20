@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SdDemoApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_matches">Profile Matches</string>
+    <string name="favorite_matches">Favorite Matches</string>
+</resources>
