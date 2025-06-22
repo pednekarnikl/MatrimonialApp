@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
 import com.ddesk.sddemoapp.R
+import com.ddesk.sddemoapp.data.model.UserEntity
 import com.ddesk.sddemoapp.databinding.FragmentFavoriteMatchesBinding
 import com.ddesk.sddemoapp.presentation.MainActivity
 import com.ddesk.sddemoapp.presentation.adapters.FavoriteMatchesAdapter
@@ -43,9 +44,22 @@ class FavoriteMatchesFragment : Fragment() {
                 adapter.setOnDeleteClickListener { user ->
                     viewModel.deleteFavoriteMatch(user)
                 }
+                adapter.setOnCardClickListener { user ->
+                    navigateToUserProfile(user)
+                }
             }
         }
 
     }
 
+
+    private fun navigateToUserProfile(user: UserEntity) {
+        val bundle = Bundle().apply {
+            putParcelable("USER_KEY", user) // Ensure UserEntity implements Parcelable
+        }
+        requireActivity().supportFragmentManager.beginTransaction()
+            .add(R.id.fragment_container, UserProfileFragment().apply { arguments = bundle })
+            .addToBackStack(null)
+            .commit()
+    }
 }

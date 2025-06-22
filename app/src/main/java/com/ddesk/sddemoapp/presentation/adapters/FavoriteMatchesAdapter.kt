@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.ddesk.sddemoapp.R
@@ -12,6 +13,7 @@ import com.ddesk.sddemoapp.data.model.UserEntity
 
 class FavoriteMatchesAdapter(private val items: List<UserEntity>) : RecyclerView.Adapter<FavoriteMatchesViewHolder>() {
     private var onDeleteClick: ((UserEntity) -> Unit)? = null
+    private var onCardClickListener: ((UserEntity) -> Unit)? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FavoriteMatchesViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -20,12 +22,15 @@ class FavoriteMatchesAdapter(private val items: List<UserEntity>) : RecyclerView
     }
 
     override fun onBindViewHolder(holder: FavoriteMatchesViewHolder, position: Int) {
-        holder.bind(items[position], onDeleteClick)
+        holder.bind(items[position], onDeleteClick,onCardClickListener)
     }
 
     override fun getItemCount(): Int = items.size
 
     // Setters for click listeners
+    fun setOnCardClickListener(listener: (UserEntity) -> Unit) {
+        onCardClickListener = listener
+    }
     fun setOnDeleteClickListener(listener: (UserEntity) -> Unit) {
         onDeleteClick = listener
     }
@@ -35,8 +40,9 @@ class FavoriteMatchesAdapter(private val items: List<UserEntity>) : RecyclerView
 class FavoriteMatchesViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     fun bind(
         item: UserEntity,
-        onDeleteClick: ((UserEntity) -> Unit)?
-    ) {
+        onDeleteClick: ((UserEntity) -> Unit)?,
+        onCardClick: ((UserEntity) -> Unit)?,
+        ) {
         val icon = itemView.findViewById<ImageView>(R.id.ivIcon)
 
         Glide.with(itemView.context)
@@ -51,6 +57,9 @@ class FavoriteMatchesViewHolder(itemView: View) : RecyclerView.ViewHolder(itemVi
 
         itemView.findViewById<ImageView>(R.id.icDelete).setOnClickListener {
             onDeleteClick?.invoke(item)
+        }
+        itemView.findViewById<CardView>(R.id.cvRoot).setOnClickListener {
+            onCardClick?.invoke(item)
         }
     }
 }

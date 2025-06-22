@@ -17,7 +17,6 @@ import com.ddesk.sddemoapp.presentation.adapters.ItemAdapter
 import com.ddesk.sddemoapp.presentation.viewmodel.MatchesViewModel
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
-import java.util.Collections
 
 
 class NewMatchesFragment : Fragment() {
@@ -136,6 +135,9 @@ class NewMatchesFragment : Fragment() {
 
     private fun setupRecyclerView(data: List<UserEntity>) {
         val adapter = ItemAdapter(data)
+        adapter.setOnCardClickListener { user ->
+            navigateToUserProfile(user)
+        }
         adapter.setOnCancelClickListener { user ->
             viewModel.removeUserFromList(user)
         }
@@ -149,6 +151,15 @@ class NewMatchesFragment : Fragment() {
     private fun navigateToFavorites() {
         requireActivity().supportFragmentManager.beginTransaction()
             .add(R.id.fragment_container, FavoriteMatchesFragment())
+            .addToBackStack(null)
+            .commit()
+    }
+    private fun navigateToUserProfile(user: UserEntity) {
+        val bundle = Bundle().apply {
+            putParcelable("USER_KEY", user) // Ensure UserEntity implements Parcelable
+        }
+        requireActivity().supportFragmentManager.beginTransaction()
+            .add(R.id.fragment_container, UserProfileFragment().apply { arguments = bundle })
             .addToBackStack(null)
             .commit()
     }

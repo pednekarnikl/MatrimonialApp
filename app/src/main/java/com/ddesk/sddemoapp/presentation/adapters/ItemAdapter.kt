@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.ddesk.sddemoapp.R
@@ -13,6 +14,7 @@ import com.ddesk.sddemoapp.data.model.UserEntity
 class ItemAdapter(private val items: List<UserEntity>) : RecyclerView.Adapter<ItemViewHolder>() {
     private var onCancelClickListener: ((UserEntity) -> Unit)? = null
     private var onSelectClickListener: ((UserEntity) -> Unit)? = null
+    private var onCardClickListener: ((UserEntity) -> Unit)? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -21,12 +23,15 @@ class ItemAdapter(private val items: List<UserEntity>) : RecyclerView.Adapter<It
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        holder.bind(items[position], onCancelClickListener, onSelectClickListener)
+        holder.bind(items[position], onCancelClickListener, onSelectClickListener,onCardClickListener)
     }
 
     override fun getItemCount(): Int = items.size
 
     // Setters for click listeners
+    fun setOnCardClickListener(listener: (UserEntity) -> Unit) {
+        onCardClickListener = listener
+    }
     fun setOnCancelClickListener(listener: (UserEntity) -> Unit) {
         onCancelClickListener = listener
     }
@@ -40,7 +45,9 @@ class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     fun bind(
         item: UserEntity,
         onCancelClick: ((UserEntity) -> Unit)?,
-        onSelectClick: ((UserEntity) -> Unit)?
+        onSelectClick: ((UserEntity) -> Unit)?,
+        onCardClick: ((UserEntity) -> Unit)?,
+
     ) {
         val icon = itemView.findViewById<ImageView>(R.id.ivIcon)
 
@@ -54,6 +61,10 @@ class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         itemView.findViewById<TextView>(R.id.tvName).text = item.fullName
         itemView.findViewById<TextView>(R.id.tvAgeAddress).text =
             "${item.age} ${item.street},${item.city},${item.street}"
+
+        itemView.findViewById<CardView>(R.id.cvRoot).setOnClickListener {
+            onCardClick?.invoke(item)
+        }
 
         itemView.findViewById<ImageView>(R.id.ivCancel).setOnClickListener {
             onCancelClick?.invoke(item)
