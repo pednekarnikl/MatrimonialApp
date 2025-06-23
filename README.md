@@ -59,6 +59,7 @@ The app follows a unidirectional data flow:
 fun calculateCompatibility(currentUserAge: Int, currentUserCity: String, matchAge: Int, matchCity: String): Float {
     ...
 }
+```
 
 This Kotlin function calculateCompatibility computes a compatibility score (ranging from 0.0 to 1.0) between two users based on their age difference (60% weight) and location match (40% weight). The age score decreases linearly from 1.0 (≤2 years difference) to 0.2 (>12 years difference), while the location score is binary (1.0 for same city, 0.0 otherwise). The final score is the weighted sum of these two factors, clamped to ensure it stays within bounds. This simplistic model prioritizes age proximity and geographic proximity but could be extended with additional factors
 
