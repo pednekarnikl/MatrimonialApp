@@ -54,6 +54,14 @@ The app follows a unidirectional data flow:
 - `MatchesFragment/Activity`: UI components
 - Custom views and adapters
 
+### Match Score Logic
+```kotlin
+fun calculateCompatibility(currentUserAge: Int, currentUserCity: String, matchAge: Int, matchCity: String): Float {
+    ...
+}
+
+This Kotlin function calculateCompatibility computes a compatibility score (ranging from 0.0 to 1.0) between two users based on their age difference (60% weight) and location match (40% weight). The age score decreases linearly from 1.0 (≤2 years difference) to 0.2 (>12 years difference), while the location score is binary (1.0 for same city, 0.0 otherwise). The final score is the weighted sum of these two factors, clamped to ensure it stays within bounds. This simplistic model prioritizes age proximity and geographic proximity but could be extended with additional factors
+
 ## Dependency Injection
 
 The app uses Dagger Hilt for dependency injection with the following modules:
@@ -74,3 +82,20 @@ The app uses Dagger Hilt for dependency injection with the following modules:
 lateinit var factory: MatchesViewModelFactory
 
 private val viewModel: MatchesViewModel by viewModels { factory }
+
+
+### Design Challenges
+## Suppose you cannot show profile images due to a legal change.
+a. We can load generic icon based on User initials/ or we can show default user icon male or female using glide image loader
+b. We can enhance User profile with verification badge and Match score
+c. We can even add personal traits like hobbies
+
+## Improvements
+a. Deeplinks and Notification feature
+b. Video call option for premium membership
+c. Login option - A secure login will share base url in login API response
+d. Blue tick badge for real user
+
+
+
+
