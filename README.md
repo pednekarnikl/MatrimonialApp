@@ -81,6 +81,7 @@ The app uses Dagger Hilt for dependency injection with the following modules:
 // ViewModel injection in Activity
 @Inject
 lateinit var factory: MatchesViewModelFactory
+```
 
 private val viewModel: MatchesViewModel by viewModels { factory }
 
